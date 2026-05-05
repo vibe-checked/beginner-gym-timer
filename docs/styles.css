@@ -33,7 +33,7 @@ a:hover {
 
 .page {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 920px;
   min-height: 100vh;
   padding: 56px 22px;
 }
@@ -76,7 +76,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin: 24px 0 0;
-  max-width: 620px;
+  max-width: 700px;
 }
 
 .actions {
@@ -94,6 +94,60 @@ p {
   display: inline-flex;
   min-height: 52px;
   padding: 0 18px;
+}
+
+.section {
+  border-top: 1px solid var(--line);
+  padding: 54px 0 0;
+}
+
+.section + .section {
+  margin-top: 54px;
+}
+
+.section h2 {
+  font-size: clamp(30px, 6vw, 48px);
+  line-height: 1.05;
+  margin: 0;
+  max-width: 760px;
+}
+
+.section p:not(.eyebrow) {
+  max-width: 760px;
+}
+
+.story {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-left: -18px;
+  margin-right: -18px;
+  padding: 34px 18px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 54px;
+}
+
+.feature-grid article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.feature-grid h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.feature-grid p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .document {
@@ -114,4 +168,10 @@ p {
   border-top: 1px solid var(--line);
   margin-top: 40px;
   padding-top: 24px;
+}
+
+@media (max-width: 720px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
