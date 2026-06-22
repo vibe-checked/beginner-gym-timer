@@ -8,11 +8,6 @@
     "scheme": "beginnergymtimer",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#101318"
-    },
     "ios": {
       "bundleIdentifier": "com.markutilitylabs.beginnergymtimer",
       "infoPlist": {
@@ -34,7 +29,20 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#101318",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 300,
+          "dark": {
+            "backgroundColor": "#101318",
+            "image": "./assets/images/splash-icon.png",
+            "imageWidth": 300
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
