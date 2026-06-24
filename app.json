@@ -11,7 +11,8 @@
     "ios": {
       "bundleIdentifier": "com.markutilitylabs.beginnergymtimer",
       "infoPlist": {
-        "CFBundleDisplayName": "Gym Timer"
+        "CFBundleDisplayName": "Gym Timer",
+        "ITSAppUsesNonExemptEncryption": false
       },
       "supportsTablet": false
     },
